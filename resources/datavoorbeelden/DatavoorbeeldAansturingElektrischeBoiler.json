@@ -1,0 +1,137 @@
+{
+	"@context": [
+		"",
+		{
+			"xsd": "http://www.w3.org/2001/XMLSchema#",
+			"qudt": "https://qudt.org/schema/qudt/",
+			"skos": "http://www.w3.org/2004/02/skos/core#"
+		}
+	],
+	"@graph": [
+		{
+			"@id": "_:AS001",
+			"@type": "Aansturing",
+			"Aansturing.aangestuurdKenmerk": "https://example.com/concept/aanstuurbaar_kenmerk/toestelstatus",
+			"Aansturing.aangestuurdObject": "https://example.com/id/energietoestel/ET001",
+			"Aansturing.resultaat": "https://example.com/concept/toestelstatus/uit",
+			"Aansturing.resultaattijd": {
+				"@type": "Moment",
+				"Moment.tijdstip": "20250315T09:00:00.000"
+			},
+			"Aansturing.gebruiktePprocedure": {
+				"@type": "Aansturingsprocedure",
+				"Aansturingsprocedure.type": "https://example.com/concept/aansturingstype/statusaanpassing_volgens_elektriciteitsprijs",
+				"Aansturingsprocedure.input": [
+					{
+						"@type": "Input",
+						"Input.type": "https://example.com/concept/inputtype/elektriciteitsprijs_drempelwaarde",
+						"Input.referentie": {
+							"@type": "KwantitatieveWaarde",
+							"KwantitatieveWaarde.waarde": {
+								"@value": "0.1",
+								"@type": "xsd:float"
+							},
+							"KwantitatieveWaarde.eenheid": {
+								"@id": "http://qudt.org/vocab/unit/EUR-PER-KiloW-HR",
+								"@type": "qudt:Unit"
+							}
+						}
+					},
+					{
+						"@type": "Input",
+						"Input.type": "https://example.com/concept/inputtype/observatie",
+						"Input.referentie": "_:OB001"
+					}
+				]
+			},
+			"Aansturing.uitgevoerdMet": {
+				"@type": "Aansturingssysteem",
+				"Aansturingssysteem.type": "https://example.com/concept/aansturingssysteemtype/controller"
+			}
+		},
+		{
+			"@id": "https://example.com/id/energietoestel/ET001",
+			"@type": "Energieverbruikstoestel",
+			"Domeinobject.type": "https://example.com/concept/toesteltype/elektrische_boiler"
+		},
+		{
+			"@id": "_:OB001",
+			"@type": "Observatie",
+			"Observatie.geobserveerdKenmerk": "https://example.com/concept/observeerbaar_kenmerk/elektriciteitsprijs",
+			"Observatie.geobserveerdObject": {
+				"@id": "",
+				"@type": "Energieaansluiting",
+				"Energieaansluiting.adres": {
+					"@type": "Adresvoorstelling",
+					"Adresvoorstelling.volledigAdres": {
+						"@value": "Mercatorstraat 12, 1070 Anderlecht",
+						"@language": "nl"
+					}
+				}
+			},
+			"Observatie.resultaat": {
+				"@type": "KwantitatieveWaarde",
+				"KwantitatieveWaarde.waarde": {
+					"@value": "0.106450",
+					"@type": "xsd:float"
+				},
+				"KwantitatieveWaarde.eenheid": {
+					"@id": "http://qudt.org/vocab/unit/EUR-PER-KiloW-HR",
+					"@type": "qudt:Unit"
+				}
+			},
+			"Observatie.resultaattijd": {
+				"@type": "Moment",
+				"Moment.tijdstip": "20250315T09:00:00.000"
+			},
+			"Observatie.gebruikteProcedure": {
+				"@type": "Observatieprocedure",
+				"Observatieprocedure.type": "https://example.com/concept/obsevatieproceduretype/API-Call"
+			},
+			"Observatie.uitgevoerdMet": {
+				"@type": "Sensor",
+				"Sensor.type": "https://example.com/concept/sensortype/API"
+			}
+		},
+		{
+			"@id": "https://example.com/concept/aanstuurbaar_kenmerk/toestelstatus",
+			"@type": "skos:Concept"
+		},
+		{
+			"@id": "https://example.com/concept/toestelstatus/uit",
+			"@type": "skos:Concept"
+		},
+		{
+			"@id": "https://example.com/concept/aansturingstype/statusaanpassing_volgens_elektriciteitsprijs",
+			"@type": "skos:Concept"
+		},
+		{
+			"@id": "https://example.com/concept/inputtype/elektriciteitsprijs_drempelwaarde",
+			"@type": "skos:Concept"
+		},
+		{
+			"@id": "https://example.com/concept/inputtype/observatie",
+			"@type": "skos:Concept"
+		},
+		{
+			"@id": "https://example.com/concept/aansturingssysteemtype/controller",
+			"@type": "skos:Concept"
+		},
+		{
+			"@id": "https://example.com/concept/toesteltype/elektrische_boiler",
+			"@type": "skos:Concept"
+		},
+		{
+			"@id": "https://example.com/concept/observeerbaar_kenmerk/elektriciteitsprijs",
+			"@type": "skos:Concept"
+		},
+		{
+			"@id": "https://example.com/concept/sensortype/API",
+			"@type": "skos:Concept"
+		},
+		{
+			"@id": "https://example.com/concept/obsevatieproceduretype/API-Call",
+			"@type": "skos:Concept"
+		}
+	]
+}
