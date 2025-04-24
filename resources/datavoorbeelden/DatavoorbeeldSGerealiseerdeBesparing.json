@@ -83,11 +83,11 @@
 			},
 			"Observatie.gebruikteProcedure": {
 				"@type": "Observatieprocedure",
-				"Observatie.type": "https://example.com/concept/observatieproceduretype/berekening"
+				"Observatieprocedure.type": "https://example.com/concept/observatieproceduretype/berekening"
 			},
 			"Observatie.uitgevoerdMet": {
 				"@type": "Sensor",
-				"Aansturingssysteem.type": "https://example.com/concept/sensortype/energiemanagementsysteem"
+				"Sensor.type": "https://example.com/concept/sensortype/energiemanagementsysteem"
 			}
 		}
 	]

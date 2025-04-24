@@ -1,0 +1,79 @@
+{
+	"@context": "",
+	"@graph": [
+		{
+			"@id": "_:AS001",
+			"@type": "Aansluiting",
+			"Nutsvoorzieningnetwerkelement.identificator": {
+				"@type": "Identificator",
+				"Identificator.identificator": {
+					"@value": "541234567890123456",
+					"@type": "https://example.com/concept/identificatortype/ean_nummer"
+				}
+			},
+			"Nutsvoorzieningnetwerkelement.inNetwerk": "_:NW001",
+			"Nutsvoorzieningknoop.beginlink": [
+				{
+					"@type": "NutsvoorzieningLink",
+					"Nutsvoorzieninglink.eindknoop": "_:AS002"
+				},
+				{
+					"@type": "NutsvoorzieningLink",
+					"Nutsvoorzieninglink.eindknoop": "_:AS003"
+				}
+			]
+		},
+		{
+			"@id": "_:AS002",
+			"@type": "Aansluiting",
+			"Nutsvoorzieningnetwerkelement.identificator": {
+				"@type": "Identificator",
+				"Identificator.identificator": {
+					"@value": "SUBA001",
+					"@type": "https://example.com/concept/identificatortype/intern_aansluitingsnummer"
+				}
+			},
+			"Nutsvoorzieningnetwerkelement.inNetwerk": "_:NW002"
+		},
+		{
+			"@id": "_:AS003",
+			"@type": "Aansluiting",
+			"Nutsvoorzieningnetwerkelement.identificator": {
+				"@type": "Identificator",
+				"Identificator.identificator": {
+					"@value": "SUBB001",
+					"@type": "https://example.com/concept/identificatortype/intern_aansluitingsnummer"
+				}
+			},
+			"Nutsvoorzieningnetwerkelement.inNetwerk": "_:NW002"
+		},
+		{
+			"@id": "_:NW001",
+			"@type": "Nutsvoorzieningnetwerk",
+			"Nutsvoorzieningnetwerk.bevoegdePartij": "_:OG001",
+			"Nutsvoorzieningnetwerk.nutsvoorzieningnetwerktype": "https://example.com/concept/nutsvoorzieningnetwerktype/elektriciteit"
+		},
+		{
+			"@id": "_:NW002",
+			"@type": "Nutsvoorzieningnetwerk",
+			"Nutsvoorzieningnetwerk.bevoegdePartij": "_:OG002",
+			"Nutsvoorzieningnetwerk.nutsvoorzieningnetwerktype": "https://example.com/concept/nutsvoorzieningnetwerktype/elektriciteit"
+		},
+		{
+			"@id": "_:OG001",
+			"@type": "Organisatie",
+			"Organisatie.voorkeursnaam": {
+				"@value": "Fluvius",
+				"@language": "nl"
+			}
+		},
+		{
+			"@id": "_:OG002",
+			"@type": "Organisatie",
+			"Organisatie.voorkeursnaam": {
+				"@value": "Rijksarchief te Brussel",
+				"@language": "nl"
+			}
+		}
+	]
+}

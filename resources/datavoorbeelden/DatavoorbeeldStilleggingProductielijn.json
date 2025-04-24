@@ -5,7 +5,7 @@
 			"@id": "_:AS001",
 			"@type": "Aansturing",
 			"Aansturing.aangestuurdKenmerk": "https://example.com/concept/aanstuurbaar_kenmerk/toestelstatus",
-			"Aansturing.aangestuurdObject": "_:EV001",
+			"Aansturing.aangestuurdObject": "_:TS001",
 			"Aansturing.resultaat": "https://example.com/concept/toestelstatus/uit",
 			"Aansturing.resultaattijd": {
 				"@type": "Periode",
@@ -119,17 +119,17 @@
 			},
 			"Observatie.gebruikteProcedure": {
 				"@type": "Observatieprocedure",
-				"Observatie.type": "https://example.com/concept/observatieproceduretype/online_opvraging"
+				"Observatieprocedure.type": "https://example.com/concept/observatieproceduretype/online_opvraging"
 			},
 			"Observatie.uitgevoerdMet": {
 				"@type": "Sensor",
-				"Aansturingssysteem.type": "https://example.com/concept/sensortype/rest_api"
+				"Sensor.type": "https://example.com/concept/sensortype/rest_api"
 			}
 		},
 		{
 			"@id": "_:AS001",
 			"@type": "Aansluiting",
-			"Energieaansluiting.adres": {
+			"Aansluiting.adres": {
 				"@type": "Adresvoorstelling",
 				"Adresvoorstelling.volledigAdres": {
 					"@value": "Voorbeeldstraat 123, 8500 Kortrijk",
