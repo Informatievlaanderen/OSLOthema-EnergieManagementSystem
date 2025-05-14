@@ -5,14 +5,14 @@
   "eap": "EMS.eap",
   "diagram": "EMS",
   "template": "energiemanagementsysteem.j2",
-  "title": "Applicatieprofiel Energiemanagementsysteem",
+  "title": "Applicatieprofiel-Energiemanagementsysteem",
   "publication-state": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
-  "publication-date": "2025-05-07",
+  "publication-date": "2025-05-14",
   "license": "https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0",
   "contributors-file": "stakeholders.csv",
   "contributors-column": "MijnKolom",
   "site": "site-skeleton/energiemanagementsysteem",
   "feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-EnergieManagementSystem/issues",
-  "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/"
+  "standaardregisterurl": "https://data.vlaanderen.be/standaarden/standaarden/applicatieprofiel-energiemanagementsysteem/"
 }
 ]
