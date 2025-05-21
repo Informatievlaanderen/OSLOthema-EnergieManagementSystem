@@ -2,7 +2,7 @@
   "title": "Applicatieprofiel Energiemanagementsysteem",
   "category": "Applicatieprofiel",
   "usage": "Aanbevolen (vrijwillig)",
-  "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
+  "status": "",
   "responsibleOrganisation": [
     {
       "name": "Agentschap Digitaal Vlaanderen",
@@ -15,7 +15,7 @@
   "documentation": [],
   "charter": {},
   "reports": [
-     {
+    {
       "name": "Verslag Business Werkgroep - 24 februari 2025",
       "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-EnergieManagementSystem/standaardenregister/reports/Verslag Business werkgroep EMS.pdf"
     },
@@ -29,7 +29,7 @@
     }
   ],
   "presentations": [
-     {
+    {
       "name": "Presentatie Business Werkgroep - 24 februari 2025",
       "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-EnergieManagementSystem/standaardenregister/presentations/Business Werkgroep presentatie EMS.pdf"
     },
@@ -42,9 +42,9 @@
       "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-EnergieManagementSystem/standaardenregister/presentations/Thematische werkgroep 2 presentatie EMS.pdf"
     }
   ],
-  "dateOfRegistration": "2024-12-16", 
+  "dateOfRegistration": "2024-12-16",
   "dateOfAcknowledgementByWorkingGroup": "",
-  "dateOfAcknowledgementBySteeringCommittee": "", 
+  "dateOfAcknowledgementBySteeringCommittee": "",
   "datePublicReviewStart": "",
   "datePublicReviewEnd": "",
   "endOfPublicationDate": ""
