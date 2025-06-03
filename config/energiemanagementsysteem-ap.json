@@ -11,7 +11,7 @@
   "license": "https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0",
   "contributors-file": "stakeholders.csv",
   "contributors-column": "Rol",
-  "site": "site-skeleton/energiemanagementsysteem",
+  "site": "site-skeleton/energiemanagementsysteem-ap",
   "feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-EnergieManagementSystem/issues",
   "standaardregisterurl": "https://data.vlaanderen.be/standaarden/standaarden/applicatieprofiel-energiemanagementsysteem/"
 }
