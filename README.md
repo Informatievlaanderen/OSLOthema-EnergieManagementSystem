@@ -16,12 +16,9 @@ EAP-files met de UML-diagrammen.\
 Configuratie en bestanden voor het publiceren van de specs in de folders config, site-skeleton en templates.\
 Een [changelog](https://github.com/Informatievlaanderen/OSLOthema-EnergieManagementSystem/blob/main/CHANGELOG) met wijzigingen tov vorige versies.\
 
+## Issues
 
-**_Editors:_**
-- first read [deze richtlijnen](https://github.com/Informatievlaanderen/OSLO-toolchain/blob/master/doc-user/README.md) .
-- Use [TagsAndNotes.xlsm](https://github.com/Informatievlaanderen/OSLO-allerleiTooltjes/tree/master/EA-Excel/TagsAndNotes) 
-  to edit tags in Excel. The files `*.xlsm` are included in the repo as git-ignored.
-
+Via de tab [issues](https://github.com/Informatievlaanderen/OSLOthema-EnergieManagementSystem/issues) kan je opmerkingen en feedback over het model geven.
 
 ## Administrative information
 
