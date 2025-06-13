@@ -1,26 +1,30 @@
 {% extends "ap2.j2" %}
 
 {% block summary %}
-<p>Dit applicatieprofiel heeft als doel om de datastromen semantisch te modelleren en de structuur van de data te standaardiseren in de context van een EMS, gericht op het ontwikkelen van een gemeenschappelijk begrip van EMS-data.</p>
-<p>Via dit initiatief wensen de verschillende stakeholders die rechtstreeks betrokken zijn in het ‘Revolt’ project (WVI, stad Roeselare, EMS-leverancier), het ‘EMS DOE’ project (Stad Kortrijk) en het ‘Stroommakelaar Kempen’ project (IOK) datastromen met betrekking tot EMS (Energie Management Systeem) semantisch te modelleren en de structuur van de data te standaardiseren.</p>
+<p>Het EnergieManagementSysteem (EMS) applicatieprofiel laat zien hoe termen uit het bijbehorende vocabularium moeten worden gebruikt om energiemonitoring- en besturingssystemen te beschrijven.</p>
+<p>Dit applicatiemodel bouwt verder op de SSN/SOSA, OMS en SAREF-ontologie.</p>
 
-<ul>  
-  <li>Revolt: Richt zich op EMS en slim energiebeheer op bedrijventerreinen om de efficiëntie van bedrijven te verbeteren. Het stemt productie en consumptie beter op elkaar af binnen een groep bedrijven.</li>  
-  <li>EMS DOE: Heeft dezelfde focus als Revolt, maar dan voor gemeentelijke gebouwen in plaats van bedrijven. Legt nadruk op de juiste data en kwaliteitslabels voor energiebeheer.</li>  
-  <li>Stroommakelaar Kempen: Vergelijkbaar met EMS DOE, maar met vier concrete doelen: monitoring van gemeentelijke gebouwen, aansturing van grote vermogens, voorspelling van energieverbruik en impactanalyse van maatregelen zoals laadpalen en zonnepanelen.</li>  
-</ul> 
+<p>Het model is opgebouwd uit 4 delen: Observaties, Aansturing, Object en Deployment.</p>
+<p>Centraal in het model staat Object, met Aansturing links van Object en Observaties rechts.</p>
+<p>Aan de rechterrand staat het deel van Deployment met daaronder de verschillende datatypes.</p>
+<p>Onderaan worden ook de verschillende enumeraties weergegeven.</p>
 
-<p>Deze initiatieven worden gecombineerd wegens een aanwezigheid van gelijklopende doeleinden met als doel het modelleren van generieke datastromen met betrekking tot een EMS die hardware-onafhankelijk assets kan aansturen:</p>    
-<ul>  
-  <li>Alle drie richten zich op standaardisatie van datastromen van een EMS en de uitwisseling van data als Linked (Open) Data.</li>  
-  <li>Streven naar interoperabiliteit en innovatie door het gebruik van semantische standaarden.</li>  
-  <li>Prioriteit geven aan herbruikbaarheid van data en samenwerking tussen stakeholders.</li>  
-  <li>De focus op slimme aansturing van energie-assets zoals warmtepompen, laadpalen en batterijen.</li> 
-</ul> 
+<p>Het model beschrijft een EMS als een platform waarin Observaties aan de basis liggen om energiestromen te monitoren en slim aan te sturen.</p>
+<p>Deze kunnen zowel in industriële installaties als in (overheids)gebouwen worden ingezet en zijn terug te vinden aan de rechterzijde van de Objecten.</p>
+<p>Observaties worden uitgevoerd door Sensoren en opgeslagen in een Observatieverzameling.</p>
+<p>De Observatieprocedure bepaalt hoe de observatie verloopt, zoals het opvragen van energieprijzen of het meten van verbruikswaarden.</p>
+<p>Deze verschillende Observatieprocedures zitten vervat in de enumeratie Observatieproceduretype.</p>
+<p>Het ObserveerbaarKenmerk bevat alle verschillende soorten kenmerken die kunnen worden waargenomen, variërend van temperatuur en bezetting tot complexere energieparameters.</p>
 
-<p>De aanleiding voor het standaardisatie traject 'EMS’ is het feit dat Europa en Vlaanderen meer dan ooit inzetten op klimaat- en energiedoelstellingen. Lokale besturen engageren zich via het Burgemeestersconvenant om hun bijdrage te leveren, terwijl bedrijven en publieke organisaties voor belangrijke uitdagingen staan in de transitie naar een duurzame energiehuishouding. Ondanks de talrijke maatregelen blijft veel potentieel onbenut. Bedrijven hebben vaak onvoldoende zicht op hun huidig energieverbruik en de besparingen die investeringen in hernieuwbare energie of slimme systemen kunnen opleveren. Gemeenten en lokale besturen kampen op hun beurt met een gebrek aan inzichten in energieverbruik, CO2-reductie en de impact van nieuwe technologieën zoals warmtepompen, laadpalen en zonnepanelen. Daarnaast ontbreekt het vaak aan gestandaardiseerde methodes om datastromen efficiënt te beheren, waardoor samenwerking tussen verschillende stakeholders wordt bemoeilijkt.   
-Een semantische standaard maakt het delen en uitwisselen van gegevens tussen verschillende stakeholders eenvoudiger. Dankzij machineleesbare en herbruikbare data kunnen processen efficiënter worden ingericht en kosten voor uitwisseling verlaagd. Door data te verrijken en te koppelen, ontstaat meer kennis, die zowel bedrijven als overheden in staat stelt om beter onderbouwde beslissingen te nemen.  
-</p>
+<p>Deze Observaties vormen de basis voor de Aansturing van het systeem, te vinden links van de Objecten.</p>
+<p>De Aansturing gebeurt via bepaalde Aansturingsprocedures die vervat zitten in de enumeratie Observatieproceduretype.</p>
+<p>Deze worden uitgevoerd door een Aansturingssysteem dat automatische reacties op gemeten waarden kan implementeren.</p>
+
+<p>Wat er aangestuurd en gemeten wordt, zit vervat in Object, dat de fysieke of logische entiteiten representeert binnen het EMS.</p>
+<p>De Aansluiting van het energieverbruik bevindt zich in een Nutsvoorzieningsnetwerk, dat de bredere infrastructuur vormt waarbinnen het EMS opereert.</p>
+<p>Het model omvat diverse ondersteunende klassen en datatypes, onder andere om de verschillende soorten Observeerbare – of Aansturingskenmerken aan te duiden.</p>
+
+<p>De architectuur ondersteunt zowel real-time monitoring als geautomatiseerde besturing, essentieel voor moderne smart energy toepassingen waarbij optimalisatie van energiegebruik en preventie van systeemstoringen cruciaal zijn.</p>
 
 {% endblock %}
 
