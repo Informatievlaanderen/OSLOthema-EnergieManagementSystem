@@ -1,30 +1,16 @@
 {% extends "ap2.j2" %}
 
 {% block summary %}
-<p>Het EnergieManagementSysteem (EMS) applicatieprofiel laat zien hoe termen uit het bijbehorende vocabularium moeten worden gebruikt om energiemonitoring- en besturingssystemen te beschrijven.
-Dit applicatiemodel bouwt verder op de SSN/SOSA, OMS en SAREF-ontologie.</p>
-
-<p>Het model is opgebouwd uit 4 delen: Observaties, Aansturing, Object en Deployment.
-Centraal in het model staat Object, met Aansturing links van Object en Observaties rechts.
-Aan de rechterrand staat het deel van Deployment met daaronder de verschillende datatypes.
-Onderaan worden ook de verschillende enumeraties weergegeven.</p>
-
-<p>Het model beschrijft een EMS als een platform waarin Observaties aan de basis liggen om energiestromen te monitoren en slim aan te sturen.
-Deze kunnen zowel in industriële installaties als in (overheids)gebouwen worden ingezet en zijn terug te vinden aan de rechterzijde van de Objecten.
-Observaties worden uitgevoerd door Sensoren en opgeslagen in een Observatieverzameling.
-De Observatieprocedure bepaalt hoe de observatie verloopt, zoals het opvragen van energieprijzen of het meten van verbruikswaarden.
-Deze verschillende Observatieprocedures zitten vervat in de enumeratie Observatieproceduretype.
-Het ObserveerbaarKenmerk bevat alle verschillende soorten kenmerken die kunnen worden waargenomen, variërend van temperatuur en bezetting tot complexere energieparameters.
-
-<p>Deze Observaties vormen de basis voor de Aansturing van het systeem, te vinden links van de Objecten.
-De Aansturing gebeurt via bepaalde Aansturingsprocedures die vervat zitten in de enumeratie Observatieproceduretype.
-Deze worden uitgevoerd door een Aansturingssysteem dat automatische reacties op gemeten waarden kan implementeren.</p>
-
-<p>Wat er aangestuurd en gemeten wordt, zit vervat in Object, dat de fysieke of logische entiteiten representeert binnen het EMS.
-De Aansluiting van het energieverbruik bevindt zich in een Nutsvoorzieningsnetwerk, dat de bredere infrastructuur vormt waarbinnen het EMS opereert.
-Het model omvat diverse ondersteunende klassen en datatypes, onder andere om de verschillende soorten Observeerbare – of Aansturingskenmerken aan te duiden.</p>
-
-<p>De architectuur ondersteunt zowel real-time monitoring als geautomatiseerde besturing, essentieel voor moderne smart energy toepassingen waarbij optimalisatie van energiegebruik en preventie van systeemstoringen cruciaal zijn.</p>
+<p>Het applicatieprofiel Energiemanagementsysteem toont hoe, met termen uit bestaande applicatieprofielen en vocabularia, energiemonitoring- en besturingssystemen kunnen worden beschreven.<p>
+<p>Er worden oa termen hergebruikt uit ISO19156-2023 OMS, SSN/SOSA-2025, SAREF, IMKL en MLD-DCAT.<p>
+<p>Een energiemanagementsysteem (EMS) is een geautomatiseerde systeem dat het energieverbruik in een gebouw, huis of industrieel complex optimaliseert. Dat gebeurt door real-time monitoring en meting, analyse van trends en piekverbruik en inefficiënties, optimalisatie en besparing door slimme algoritmes en AI, automatische aansturing van apparaten en systemen (verwarming, verlichting).<p>
+<p>Eerder dan het EMS zelf te beschrijven, laat dit applicatieprofiel toe om de acties te documenteren die erdoor worden uitgevoerd. Die acties zijn Observaties en Aansturingen, respectievelijk bvb het observeren van het energieverbruik ve toestel en het aan-of afzetten ervan in functie daarvan.<p>
+<p>Deze acties worden gestructureerd beschreven zoals voorzien in ISO19156-2023 OMS, SSN/SOSA-2025 waaraan ze werden ontleend. Dwz dat behalve het resultaat vd Observatie/Aansturing ook het ObserveerbaarKenmerk/AanstuurbaarKenmerk moet worden opgegeven (bvb verbruik, aan-of uitstand), evenals het Object dat dat kenmerk heeft (bvb de Aansluiting of het Toestel), de procedure die bij het observeren of aansturen is gevolgd (bvb op basis van welke drempelwaarde van energieverbruik een Toestel wordt uitgezet) en tenslotte het Aansturingssysteem of de Sensor die daarbij is gebruikt.<p>
+<p>De mogelijkheid om aan te geven welke Input is gebruikt bij de Observatieprocedure/Aansturingsprocedure laat toe een sequentie van Observatie- en/of Aansturingsacties te beschrijven, waarbij het resultaat van een Observatie/aansturing de input vormt voor een volgende Observatie/Aansturing. We voorzien ook Observatieverzameling uit SSN/SOA zodat Observaties gegroepeerd als Input kunnen worden opgegeven.<p>
+<p>Door deze aanpak kunnen heel wat EMS use-cases worden beschreven. Bvb het stilleggen van een productielijn (Aansturing) op basis van de day-ahead elektriciteitsprijs (Observatie) en een drempelwaarde (Input vd Aansturing) en het berekenen van de besparing (Observatie) op basis van het gemiddeld verbruik vd productielijn (Observatie). Of het klasseren van een gebouw (Observatie ) volgens zijn gemiddeld warmteverlies (Observatie ), gebaseerd op het gemeten warmteverlies van meerdere representatieve ruimtes in het gebouw (meerdere Observaties). Zie de datavoorbeelden in github (toegelicht in het modelleerrapport) die dit principe illustreren.<p>
+<p>Om het even welk soort klasse kan geobserveerdObject/aangestuurdObject zijn door instanties ervan bijkomend te klasseren als Domeinobject. Indien van toepassing echter kan met een subklasse daarvan worden gewerkt, ttz een instantie van Aansluiting of Toestel (of subklasse Meter van Toestel). Aansluiting is geleend bij IMKL, Toestel en Meter zijn gedefinieerd door SAREF.<p>
+<p>Merk op dat Toestel, maar ook Aansturingssysteem en Sensor Systemen zijn. Deze laatste zijn niet-disjoint met Toestel, een Sensor bvb dus bijkomend als Toestel worden getypeerd en kenmerken van beide klassen combineren. Toestellen maar ook Aansluitingen zijn potentieel ook Platformen, ttz dat ze andere Systemen kunnen hosten, bvb een Meter op een Aansluiting, of een controller of Sensor op een Toestel.<p>
+<p>We voorzien ook een verwijzing naar de klasse MachineLearningModel uit ML-DCAT, zodat een Sensor bijkomend als instantie van deze klasse kan worden getypeerd. Zo kan bvb worden aangegeven dat de Observatie een voorspelling is gemaakt mbv AI.</p>
 
 {% endblock %}
 
