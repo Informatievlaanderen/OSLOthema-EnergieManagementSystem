@@ -31,4 +31,4 @@ Volgende specificaties worden met de volgende status voorgelegd op WG datastanda
 
 | Naam|Status|Uitgiftedatum|AP|VOC|
 | --- |--- |---|---|---|
-|Energiemanagementsysteem|KandidaatStandaard|20250514|[Link](https://data.vlaanderen.be/doc/applicatieprofiel/energiemanagementsysteem/)|
+|Energiemanagementsysteem|KandidaatStandaard|20250514|[Link](https://data.vlaanderen.be/doc/applicatieprofiel/energiemanagementsysteem/)|NVT|
