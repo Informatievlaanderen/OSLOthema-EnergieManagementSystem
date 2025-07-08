@@ -16,8 +16,8 @@ EAP-files met de UML-diagrammen.\
 Configuratie en bestanden voor het publiceren van de specs in de folders config, site-skeleton en templates.\
 Een [changelog](https://github.com/Informatievlaanderen/OSLOthema-EnergieManagementSystem/blob/main/CHANGELOG) met wijzigingen tov vorige versies.
 Diverse resources:
-- Een overzicht van de [use cases]()
-- Een overzicht van gebruikte [bronnen]() (standaarden, implementaties, regelgeving).
+- Een overzicht van de [use cases](https://github.com/Informatievlaanderen/OSLOthema-EnergieManagementSystem/blob/main/resources/use-cases.md)
+- Een overzicht van gebruikte [bronnen](https://github.com/Informatievlaanderen/OSLOthema-EnergieManagementSystem/blob/main/resources/bronnen.md) (standaarden, implementaties, regelgeving).
 - Het [modelleringsrapport](https://github.com/Informatievlaanderen/OSLOthema-EnergieManagementSystem/blob/main/resources/ModelleerrapportEMS.pdf).
 - Een map met [datavoorbeelden](https://github.com/Informatievlaanderen/OSLOthema-EnergieManagementSystem/tree/main/resources/datavoorbeelden).
 
