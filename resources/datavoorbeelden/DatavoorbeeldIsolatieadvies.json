@@ -19,7 +19,8 @@
     },
     {
       "@id": "_:OB001",
-      "@type": "Classificatie",
+      "@type": "Observatie",
+      "Observatie.type": "https://example.com/concept/observatietype/classificatie",
       "Observatie.geobserveerdKenmerk": "https://example.com/concept/kenmerktype/warmteverliesklasse",
       "Observatie.geobserveerdObject": "_:GB001",
       "Observatie.resultaat": "https://example.com/concept/warmteverliesklasse/matig",
@@ -105,8 +106,8 @@
     },
     {
       "@id": "_:OB004",
-      "@type": "Tijdreeksobservatie",
-      "": ""
+      "@type": "Observatie",
+      "Observatie.type": "https://example.com/concept/observatietype/tijdreeksobservatie"
     },
     {},
     {
