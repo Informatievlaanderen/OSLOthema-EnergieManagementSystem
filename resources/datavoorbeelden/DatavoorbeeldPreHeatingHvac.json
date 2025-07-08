@@ -1,6 +1,10 @@
 {
     "@context": [
-        "https://data.vlaanderen.be/doc/applicatieprofiel/energiemanagementsysteem/ontwerpstandaard/2025-05-14/context/energiemanagementsysteem.jsonld"
+        "https://data.vlaanderen.be/doc/applicatieprofiel/energiemanagementsysteem/ontwerpstandaard/2025-05-14/context/energiemanagementsysteem.jsonld",
+        {
+            "MachineLearningModel.getraindOp": "http://data.europa.eu/it6/trainedOn",
+            "MachineLearningModel.type":"http://purl.org/dc/terms/type"
+        }
     ],
     "@graph": [
         {
