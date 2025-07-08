@@ -2,9 +2,9 @@
 
 ## Inleiding
 
-Met dit initiatief willen de stakeholders de datastromen binnen het domein “EnergieManagementSysteem” semantisch modelleren en de datastructuur standaardiseren.\
-Vocabularia en applicatieprofielen opgebouwd op basis van internationale standaarden waar in dit domein consensus over bestaat en in lijn gebracht met vigerende Vlaamse regelgeving.\
-Dit is een intitiatief van Revolt (WVI, stad Roeselare, EMS-leverancier),  EMS DOE (Stad Kortrijk) en Stroommakelaar Kempen (IOK).
+Een Energiemanagementsysteem (EMS) is een geautomatiseerd systeem dat het energieverbruik in een gebouw, huis of industrieel complex optimaliseert. Dat gebeurt door real-time monitoring en meting, analyse van trends en piekverbruik en inefficiënties, optimalisatie en besparing door slimme algoritmes en AI, automatische aansturing van apparaten en systemen (verwarming, verlichting). \
+Het ontwerpen van een datamodel waarmee deze datastromen kunnen beschreven worden is het doel van dit OSLO-traject. Voorkeur daarbij gaat naar hergebruik van internationale standaarden waar in dit domein consensus over bestaat zoals [ISO19156](https://docs.ogc.org/as/20-082r4/20-082r4.html) en [SSN/SOSA](https://w3c.github.io/sdw-sosa-ssn/ssn/). \
+Dit traject is een intitiatief van [Revolt](https://www.roeselare.be/stad-bestuur/gesubsidieerde-projecten/revolt) ([WVI](https://www.wvi.be/), [stad Roeselare](https://www.roeselare.be/), EMS-leverancier),  [EMS DOE](https://www.howest.be/nl/onderzoeksprojecten/cot-ems-doe) ([Stad Kortrijk](https://www.kortrijk.be/gesubsidieerde-projecten/energie-management-systeem)) en [Stroommakelaar Kempen](https://www.kempen2030.be/onze-klimaatprojecten/stroommakelaar) ([IOK](https://www.iok.be/)).
 
 ## Verslagen en presentaties
 
