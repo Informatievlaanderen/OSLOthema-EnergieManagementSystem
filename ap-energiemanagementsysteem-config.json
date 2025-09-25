@@ -18,7 +18,10 @@
     }
   ],
   "documentation": [],
-  "charter": {},
+  "charter": {
+      "name": "Werkgroep charter OSLO Energiemanagementsysteem (EMS)",
+      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-EnergieManagementSystem/standaardenregister/charter/Werkgroep charter OSLO Energiemanagementsysteem (EMS).pdf"
+    },
   "reports": [
     {
       "name": "Verslag Business Werkgroep - 24 februari 2025",
