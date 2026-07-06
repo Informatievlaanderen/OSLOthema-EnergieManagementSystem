@@ -9,6 +9,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- PascalCase and CamelCase
+- Replace abbreviations
+- Add missing dot at end of sentences
+- Replace http://schema.org with https://schema.org
+- Remove empty `ap-usage-note` values
+- Capitalise sentences
+
 ## 2025-03-03
 Aanmaak eerste datamodel op basis van business werkgroep
 
