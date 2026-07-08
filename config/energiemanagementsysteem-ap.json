@@ -1,18 +1,18 @@
 [
-{
-  "name": "energiemanagementsysteem",
-  "type": "ap",
-  "eap": "EMS.eap",
-  "diagram": "EMS",
-  "template": "energiemanagementsysteem.j2",
-  "title": "Applicatieprofiel Energie Management Systeem",
-  "publication-state": "https://data.vlaanderen.be/id/concept/StandaardStatus/ErkendeStandaard",
-  "publication-date": "2025-05-14",
-  "license": "https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0",
-  "contributors-file": "stakeholders.csv",
-  "contributors-column": "Rol",
-  "site": "site-skeleton/energiemanagementsysteem-ap",
-  "feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-EnergieManagementSystem/issues",
-  "standaardregisterurl": "https://data.vlaanderen.be/standaarden/applicatieprofiel-energiemanagementsysteem/"
-}
+  {
+    "name": "energiemanagementsysteem",
+    "type": "ap",
+    "eap": "EMS.eap",
+    "diagram": "EMS",
+    "template": "energiemanagementsysteem.j2",
+    "title": "Applicatieprofiel Energie Management Systeem",
+    "publication-state": "https://data.vlaanderen.be/id/concept/StandaardStatus/ErkendeStandaard",
+    "publication-date": "2025-05-14",
+    "license": "https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0",
+    "contributors-file": "stakeholders.csv",
+    "contributors-column": "Rol",
+    "site": "site-skeleton/energiemanagementsysteem-ap",
+    "feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-EnergieManagementSystem/issues",
+    "standaardregisterurl": "https://data.vlaanderen.be/standaarden/applicatieprofiel-energiemanagementsysteem/"
+  }
 ]
